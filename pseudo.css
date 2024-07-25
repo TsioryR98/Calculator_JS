@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+/*selection dans css element html pseudo element*/
+
+.container p:nth-child(1){
+    color: brown;
+}
+.container p:nth-child(2){
+    color: rgb(160, 182, 19);
+}
+p{
+    position: relative;
+}
+.container p::before {
+    position: absolute;
+    content: open-quote;
+    left: -8vw;
+}
+.container p::after {
+    position: absolute;
+    content: close-quote;
+    right: -8vw;
+}
+
+.case {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+}
